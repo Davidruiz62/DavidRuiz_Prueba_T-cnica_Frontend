@@ -1,0 +1,151 @@
+/* ===========================
+   RESET GENERAL
+=========================== */
+
+html,
+body {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  height: 100%;
+  font-family: Arial, sans-serif;
+}
+
+/* Root ocupa toda la pantalla */
+#root {
+  width: 100%;
+  min-height: 100vh;
+  margin: 0;
+  padding: 0;
+}
+
+/* ===========================
+   APP GENERAL
+=========================== */
+
+.app {
+  background-color: white;
+  color: black;
+  min-height: 100vh;
+  width: 100%;
+  transition: 0.3s;
+  padding: 20px;
+}
+
+/* MODO OSCURO */
+.app.dark {
+  background-color: #121212;
+  color: white;
+}
+
+/* ===========================
+   CONTENEDOR CENTRADO
+=========================== */
+
+.container {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 2rem;
+  text-align: center;
+}
+
+/* ===========================
+   HEADER
+=========================== */
+
+header h1 {
+  font-size: 3rem;
+  margin-bottom: 10px;
+}
+
+header p {
+  margin-bottom: 20px;
+  font-size: 1.2rem;
+}
+
+/* Inputs y selects */
+input,
+select {
+  padding: 10px;
+  margin: 10px;
+  border-radius: 8px;
+  border: 1px solid gray;
+  outline: none;
+}
+
+/* ===========================
+   BOTÓN MODO OSCURO
+=========================== */
+
+button {
+  padding: 10px 15px;
+  margin-top: 10px;
+  cursor: pointer;
+  border: none;
+  border-radius: 8px;
+  font-weight: bold;
+  background: black;
+  color: white;
+  transition: 0.3s;
+}
+
+/* Botón en modo oscuro */
+.app.dark button {
+  background: white;
+  color: black;
+}
+
+/* ===========================
+   GRID PRODUCTOS
+=========================== */
+
+.products-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 20px;
+  margin-top: 30px;
+}
+
+/* ===========================
+   TARJETAS PRODUCTO
+=========================== */
+
+.product-card {
+  background: white;
+  color: black;
+  padding: 20px;
+  border-radius: 12px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+  transition: 0.3s;
+}
+
+/* Tarjetas en modo oscuro */
+.app.dark .product-card {
+  background: #1e1e1e;
+  color: white;
+}
+
+/* Imagen producto */
+.product-card img {
+  width: 100px;
+  height: 100px;
+  object-fit: contain;
+  margin-bottom: 10px;
+}
+
+/* Texto */
+.product-card h3 {
+  font-size: 1.1rem;
+  margin: 10px 0;
+}
+
+.product-card .category {
+  font-style: italic;
+  opacity: 0.8;
+}
+
+.product-card .price {
+  font-size: 1.3rem;
+  font-weight: bold;
+  margin-top: 10px;
+}
