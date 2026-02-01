@@ -1,20 +1,52 @@
-<<<<<<< HEAD
-# React + Vite
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+# Catálogo de Productos
 
-Currently, two official plugins are available:
+Aplicación web desarrollada con **React + Vite** que muestra un catálogo de productos de una tienda online gracias a una API.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+La aplicación permite buscar productos por nombre, filtrar por categoría, ordenar por precio de forma ascendente y descendente, cambiar de modo claro a modo oscuro y viceversa e incluye un diseño responsive.
 
-## React Compiler
+---
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+## Instrucciones de instalación
 
-## Expanding the ESLint configuration
+Crear el proyecto y las carpetas necesarias en el cmd y 
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
-=======
-# DavidRuiz_Prueba_T-cnica_Frontend
->>>>>>> 0a8c858c1daa6a3e1096434b5da03e0456a70cdb
+## Cómo ejecutar el proyecto
+Es necesario poner en el cmd esta linea dentro de la carpeta del proyecto: npm run dev
+y en el navegador la url que aparece en la terminal.
+
+## Decisiones técnicas
+
+- **React + Vite**  
+  He eligió React con Vite porque es con la tecnologia que más comodo me siento dentro de las opciones que daba el ejercicio.
+
+- **Uso de Hooks (useState y useEffect)**  
+  Para gestionar el estado de la aplicación, los filtros y la carga de datos de forma sencilla y clara.
+
+- **Uso de API externa**  
+  Se utiliza una API pública de pruebas para simular un catálogo real de productos.
+
+- **Manejo de errores y estados de carga**     
+  Se muestran mensajes de loading y de errores para mejorar la experiencia de usuario.
+
+- **Filtrado y ordenación en el cliente**     
+  La búsqueda, el filtro por categoría y la ordenación por precio se realizan en el cliente para obtener una respuesta inmediata.
+
+- **Modo claro / oscuro**     
+  Se añade un modo claro y oscuro para mejorar la experiencia de usuario.
+
+ ## Explicación de la estructura del proyecto
+
+- **ProductCard.jsx**   
+  Recibe un objeto producto y se encarga de mostrar su información (imagen, nombre, descripcion y precio).
+
+- **products.js**    
+  Se encarga de obtener los productos desde una API externa, manejando posibles errores durante la petición.
+
+- **App.jsx**    
+  Componente principal de la aplicación donde se gestiona el estado global, se cargan los productos desde la API y se aplican los filtros y el renderizado del catálogo.
+
+- **App.css / index.css**  
+  Contienen los estilos de la aplicación.
+
+
