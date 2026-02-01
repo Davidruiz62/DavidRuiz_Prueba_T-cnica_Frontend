@@ -11,7 +11,7 @@ function App() {
   const [category, setCategory] = useState('all')
   const [darkMode, setDarkMode] = useState(false)
 
-  // Cargar productos desde la API
+
   useEffect(() => {
     getProducts()
       .then(data => setProducts(data))
@@ -126,7 +126,7 @@ function App() {
           <ProductCard
             key={product.id}
             product={product}
-            darkMode={darkMode} // si quieres pasar darkMode al card también
+            darkMode={darkMode} 
           />
         ))}
       </div>
