@@ -49,4 +49,16 @@ y en el navegador la url que aparece en la terminal.
 - **App.css / index.css**  
   Contienen los estilos de la aplicación.
 
+  ## Mejoras futuras
+
+Si dispusiera de más tiempo, podría implementar las siguientes mejoras:
+
+- Scroll infinito para mejorar el rendimiento con grandes cantidades de productos.
+- Implementar un carrusel de imágenes en las tarjetas de producto para mejorar la visualización de los productos.
+- Implementar un sistema de inicio de sesión para personalizar la experiencia del usuario.
+- Permitir añadir productos a un carrito de compra una vez iniciada la sesión del usuario.
+
+
+
+
 
