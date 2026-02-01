@@ -9,11 +9,16 @@ La aplicación permite buscar productos por nombre, filtrar por categoría, orde
 
 ## Instrucciones de instalación
 
-Crear el proyecto y las carpetas necesarias en el cmd y 
+1. Clonar el repositorio desde GitHub.
+2. Acceder a la carpeta del proyecto desde la terminal.
+3. Instalar las dependencias necesarias ejecutando el siguiente comando:
+npm install
 
 ## Cómo ejecutar el proyecto
-Es necesario poner en el cmd esta linea dentro de la carpeta del proyecto: npm run dev
-y en el navegador la url que aparece en la terminal.
+
+Para ejecutar la aplicación, es necesario situarse en la carpeta del proyecto y ejecutar el siguiente comando en la terminal;
+npm run dev
+Una vez hecho, aparecerá en la terminal la URL donde se está ejecutando la aplicación, la cual deberá abrirse en el navegador.
 
 ## Decisiones técnicas
 
